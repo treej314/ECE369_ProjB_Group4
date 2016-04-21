@@ -1,0 +1,5 @@
+successfully connected to phil's laptop via UDP 
+typed hey
+received HEY
+
+host changed to static address in UDPserver
