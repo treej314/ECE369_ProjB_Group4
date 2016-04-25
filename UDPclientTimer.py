@@ -24,6 +24,7 @@ while True:
 	try:
 		# Record send_time
 		Ti = time.time()
+
 		# Send a UDP packet
 		clientSocket.sendto(message, (sys.argv[1], int(sys.argv[2])))
 		# Receive the server response
