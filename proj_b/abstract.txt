@@ -1,0 +1,21 @@
+The application programming interface (API) defines function calls to create, close, read and write to and from a socket. The socket is the basic abstraction for network communication in the socket API. This socket defines an endpoint of communication for a process. The operating system maintains information about the socket and its connection. The application references the socket for sends and receives. 
+
+A source identifier, source port, destination identifier, and destination port are required for socket communication. This is accomplished after binding the socket. These identifiers are ip addresses of source and destination respectively. The ports are defined as numbers anywhere from 0 to 65536, which act as doors for communication. Specifying a port opens that door and allows communication to flow through. 
+
+TCP is connection oriented and UDP is connection-less. The programming process is a little different. Both UDP and TCP server operate in this process when connecting to a client: 
+1) socket module is imported
+2) server socket is created
+3) bind socket to server address
+***TCP will establish connection before transmission***
+4) wait for client to initiate
+5) close when finished
+
+Except, the TCP server has to accept a connection before transmission of messages. The clients of TCP and UDP are the same except the TCP client must request a connection before transmission. 
+
+****OPTIONAL TO ADD CODE OF TCP HERE**** do it actually
+
+#UDP timer info below#
+
+Part 5 of the project required a timer be created using UDP in a different programming language other than python. C was chosen because it was the most comfortable and convenient language. Since a connection does not need to be established, a timer needs to be created in a UDPclient program because a timer identifies after a certain time whether or not the server received a sent message. Python and C implement this process differently. 
+
+ 
